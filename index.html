@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Living a Prophetic Life | A podcast for women who live for Jesus</title>
+  <meta name="description" content="A podcast for women who are prophetic, deep in the Lord, and living for Jesus. Join the list to hear when new episodes drop.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕊️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --night: #1c1433;
+      --deep: #2a1d4a;
+      --linen: #f6efe6;
+      --muted: #cfc5dc;
+      --ember: #f0a95b;
+      --rose: #d79ab3;
+      --serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+      --sans: "Jost", system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { color-scheme: dark; }
+    body {
+      margin: 0;
+      font-family: var(--sans);
+      font-size: 1.0625rem;
+      line-height: 1.65;
+      color: var(--linen);
+      background: var(--night);
+    }
+    a { color: var(--ember); }
+    :focus-visible { outline: 3px solid var(--ember); outline-offset: 3px; }
+
+    /* Hero: dawn light rising from the bottom of the page */
+    .hero {
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 4rem 1.5rem 5rem;
+      text-align: center;
+      background:
+        radial-gradient(ellipse 80% 55% at 50% 100%, rgba(240,169,91,.55), rgba(215,154,179,.25) 45%, transparent 75%),
+        linear-gradient(180deg, var(--night) 0%, var(--deep) 100%);
+    }
+    .hero-inner { max-width: 44rem; margin: 0 auto; }
+    .podcast-label {
+      margin: 0 0 1.25rem;
+      color: var(--muted);
+      letter-spacing: .04em;
+    }
+    h1 {
+      margin: 0 0 1.5rem;
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: clamp(3rem, 11vw, 6.25rem);
+      line-height: .95;
+      letter-spacing: -.01em;
+    }
+    h1 span { display: block; font-style: italic; color: var(--ember); }
+    .lede {
+      max-width: 34rem;
+      margin: 0 auto 2.25rem;
+      font-size: 1.2rem;
+      color: var(--linen);
+    }
+
+    /* Signup form */
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+      justify-content: center;
+      max-width: 34rem;
+      margin: 0 auto;
+    }
+    .field { flex: 1 1 14rem; }
+    label { position: absolute; left: -9999px; }
+    input[type="email"], input[type="text"] {
+      width: 100%;
+      padding: .95rem 1.1rem;
+      font: inherit;
+      color: var(--linen);
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(246,239,230,.4);
+      border-radius: 999px;
+    }
+    input::placeholder { color: var(--muted); }
+    button {
+      flex: 1 1 100%;
+      padding: .95rem 1.6rem;
+      font: inherit;
+      font-weight: 500;
+      color: var(--night);
+      background: var(--ember);
+      border: 0;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+    button:hover { background: #f7bb78; }
+    .fine { margin: 1rem auto 0; max-width: 30rem; font-size: .9rem; color: var(--muted); }
+
+    /* Content */
+    main section { padding: 5rem 1.5rem; }
+    .wrap { max-width: 40rem; margin: 0 auto; }
+    h2 {
+      margin: 0 0 1.25rem;
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: clamp(2rem, 6vw, 3rem);
+      line-height: 1.1;
+    }
+    .expect { background: var(--deep); }
+    .expect ul { margin: 0; padding: 0; list-style: none; }
+    .expect li { padding: 1.25rem 0; border-top: 1px solid rgba(246,239,230,.2); }
+    .expect li:last-child { border-bottom: 1px solid rgba(246,239,230,.2); }
+    .expect strong { display: block; font-family: var(--serif); font-size: 1.5rem; font-weight: 600; color: var(--ember); }
+    .about p { margin: 0 0 1.1rem; }
+    .signoff { font-family: var(--serif); font-style: italic; font-size: 1.6rem; color: var(--rose); }
+
+    footer { padding: 2.5rem 1.5rem 3rem; text-align: center; font-size: .9rem; color: var(--muted); background: var(--night); }
+    footer p { margin: 0 0 .5rem; }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="podcast-label">A podcast for women who live for Jesus</p>
+      <h1>Living a <span>Prophetic Life</span></h1>
+      <p class="lede">Conversations for women who hear God, walk deep with Him, and want to live every day for Jesus. Join the list and be the first to know when episodes drop.</p>
+
+      <!--
+        EMAIL SIGNUP FORM
+        Replace the action URL below with the form URL from your email service
+        (MailerLite, Kit, Buttondown, etc.) or paste their embed code here instead.
+        Keep the field name that your service requires (often "email" or "fields[email]").
+      -->
+      <form action="YOUR_EMAIL_SERVICE_FORM_URL" method="post">
+        <div class="field">
+          <label for="name">First name</label>
+          <input type="text" id="name" name="name" placeholder="First name" autocomplete="given-name">
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="Email address" autocomplete="email" required>
+        </div>
+        <button type="submit">Join the list</button>
+      </form>
+      <p class="fine">New episodes + encouragement. Unsubscribe any time.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="expect">
+      <div class="wrap">
+        <h2>What you'll find here</h2>
+        <ul>
+          <li><strong>Hearing God's voice</strong>Learning to recognize Him, test what you hear, and walk it out with wisdom.</li>
+          <li><strong>Living it out</strong>Real life as a prophetic woman: family, work, church, and the hidden places.</li>
+          <li><strong>Going deeper</strong>Prayer, Scripture, and obedience that keep you rooted in the Lord.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="wrap">
+        <h2>Welcome, Sister</h2>
+        <p>If you have ever felt set apart, or wondered whether anyone else hears and sees the way you do, this space is for you.</p>
+        <p>Living a Prophetic Life is a podcast for women who love Jesus first and want to stay close to Him in every season. Pull up a chair.</p>
+        <p class="signoff">Come as you are. Leave closer to Him.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Living a Prophetic Life</p>
+    <p>Follow along on <a href="https://www.tiktok.com/@YOUR_NEW_TIKTOK_HANDLE">TikTok</a></p>
+  </footer>
+
+</body>
+</html>
